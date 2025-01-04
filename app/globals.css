@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	--color-foreground: 225, 100%, 98%;
+	--color-background: 227, 13%, 14%;
+	--color-surface: 224, 16%, 19%;
+	--color-accent: 169, 72%, 38%;
+	--color-border: 227, 11%, 25%;
+}
+
+@layer base {
+	body {
+		@apply bg-background text-foreground;
+	}
+}
